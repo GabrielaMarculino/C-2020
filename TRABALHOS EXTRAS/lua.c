@@ -49,16 +49,16 @@ int  main ( int argc, char  const * argv []) {
 		mediamaior [l] = mediamMenor;
 		l ++;
 		j = 1 ; // retorna o indice minimo
-		mediaMaior = - 999999999 ; // reseta as media kk
-		mediaMenor = 999999999 ;
-		system ( " pause " );
+		mediaMaior = -999999999; // reseta as media kk
+		mediaMenor = 999999999;
+		system("pause");
 	} while ((cont_medidas! = 0 ) && (intervalo! = 0 ));
    // fim: // do jeito que fiz o setup ele so ferificaria depois que o loop terminasse, foi necessaria a adicao do goto
     for ( int i = 1 ; i <= contteste; i++) {
-    	printf ( " Teste % d \ n " , i);
-        printf ( " % d  " , mediamaior [i]);
-        printf ( " % d \ n " , mediamenor [i]);
+    	printf("Teste % d \n " , i);
+        printf("%d" , mediamaior [i]);
+        printf("%d \n " , mediamenor [i]);
     }
-    system ( " pause " );
-	return  0 ;
+    system ("pause");
+	return  0;
 }
