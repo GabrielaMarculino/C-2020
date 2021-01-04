@@ -3,28 +3,28 @@
 #include <conio.h>
 
 int  main ( int argc, char  const * argv []) {
-	int medidas [ 1000 ], l = 1 , mediamaior [ 1000 ], mediamenor [ 1000 ], intervalo, i = 0 , j = 1 , k = 0 , mediaMaior = - 999999999 , mediaMenor = 999999999 , divisao, cont_medidas, contteste = 0 , soma = 0 , aux = 1 ;
+	int medidas [1000], l = 1 , mediamaior [1000], mediamenor [1000], intervalo, i = 0 , j = 1 , k = 0 , mediaMaior = - 999999999 , mediaMenor = 999999999 , divisao, cont_medidas, contteste = 0 , soma = 0 , aux = 1 ;
 	do {
-		system ( " cls " );
-		printf ( " Informe as variáveis ​​foram tiradas. \ n " );
-		scanf ( " % d " , & cont_medidas);
-		while (cont_medidas < 0 || cont_medidas> 800 ) {
-			printf ( " Dado invalido, tente novamente \ n " );
-			scanf ( " % d " , & cont_medidas);
+		system("cls");
+		printf("Informe as variáveis ​​foram tiradas. \n");
+		scanf("%d", &cont_medidas);
+		while(cont_medidas < 0 || cont_medidas> 800){
+			printf("Dado invalido, tente novamente \n");
+			scanf("%d",&cont_medidas);
 		}
-		printf ( " Relatório o intervalo entre as medidas \ n " );
-		scanf ( " % d " , & intervalo);
-		while (intervalo < 0 || intervalo> 800 || intervalo> cont_medidas) {
-			printf ( " Dado invalido, tente novamente \ n " );
-			scanf ( " % d " , & intervalo);
+		printf("Relatório o intervalo entre as medidas \n ");
+		scanf("%d", &intervalo);
+		while(intervalo < 0 || intervalo> 800 || intervalo> cont_medidas) {
+			printf("Dado invalido, tente novamente \n");
+			scanf ("%d", &intervalo);
 		}
-		if (cont_medidas == 0 && intervalo == 0 ) {
+		if(cont_medidas == 0 && intervalo == 0 ) {
 			goto fim;
 		}
 		contteste ++; // Contador de testes tem que estar aqui por enquanto para antes do teste acontecer
 	    for (i = 1 ; i <cont_medidas + 1 ; i++) { // le o o das medidas
-	    	printf ( " Informe a % d medida tirada \ n " , i);
-	    	scanf ( " % d " , & medidas [i]);
+	    	printf ("Informe a % d medida tirada \n" , i);
+	    	scanf ("%d" , &medidas [i]);
 	    	/*while ((cont_medidas [i] < 200 )|| (medidas [i]> 200 )) {
 	    		printf ( " Dado invalido, tente novamente \ n " );
 	    		scanf ( " % d " , & medidas [i]);
